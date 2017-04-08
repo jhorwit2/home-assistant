@@ -24,6 +24,7 @@ REQUIRES = [
     'typing>=3,<4',
     'aiohttp==2.0.5',
     'async_timeout==1.2.0',
+    'future>=0.16.0',
 ]
 
 setup(
