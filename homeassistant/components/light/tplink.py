@@ -19,7 +19,7 @@ from homeassistant.util.color import \
 from homeassistant.util.color import \
     color_temperature_kelvin_to_mired as kelvin_to_mired
 
-REQUIREMENTS = ['pyHS100==0.2.4.1']
+REQUIREMENTS = ['pyHS100>=0.2.4.2']
 
 _LOGGER = logging.getLogger(__name__)
 
