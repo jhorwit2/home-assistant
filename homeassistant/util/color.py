@@ -384,4 +384,5 @@ def color_temperature_mired_to_kelvin(mired_temperature):
 
 def color_temperature_kelvin_to_mired(kelvin_temperature):
     """Convert degrees kelvin to mired shift."""
-    return 1000000 / kelvin_temperature
+    if kelvin_temperature!=0:
+        return 1000000 / kelvin_temperature
