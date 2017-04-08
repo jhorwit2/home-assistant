@@ -80,7 +80,8 @@ class TPLinkSmartBulb(Light):
     @property
     def color_temp(self):
         """Return the color temperature of this light in mireds."""
-        return kelvin_to_mired(self.smartbulb.color_temp)
+        if kelvin_temperature != None and kelvin_temperature != 0:
+            return kelvin_to_mired(self.smartbulb.color_temp)
 
     @property
     def brightness(self):
